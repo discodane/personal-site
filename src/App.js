@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import aboutList from './assets/aboutList';
+import pic from './assets/img/me.png';
 
-class App extends Component {
-  render() {
+const App = () =>  {
+  console.log('this is happening')
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="content">
+        <div className='text'>
+          <div className="name"><span>Dane Erickson</span></div>
+          {aboutList.map((item, iterator) => <div className="listItem" key={ iterator }>{item}</div>)}
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <div className="image">
+          <img src={pic} alt="me" />
+        </div>
+    </div>
     );
-  }
 }
 
 export default App;
