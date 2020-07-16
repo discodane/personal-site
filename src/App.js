@@ -4,7 +4,6 @@ import aboutList from './assets/aboutList';
 import pic from './assets/img/me.png';
 
 const App = () =>  {
-  console.log('this is happening')
     return (
       <div className="content">
         <div className='text'>
