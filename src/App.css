@@ -20,6 +20,7 @@ body {
 
 .name {
   font-size: 5em;
+  margin-left: -6px;
 }
 .content {
   color: white;
